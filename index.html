@@ -7,85 +7,96 @@
     <link rel="icon" href="./assets/icons/favicon.ico" />
   </head>
   <body>
-    <h1>Survey Perokok</h1>
-    <p>
-      Survei ini dilakukan untuk mengetahui preferensi dan kebiasaan konsumsi
-      rokok di kalangan perokok, khususnya terkait dengan jenis-jenis rokok yang
-      digunakan. Dengan memahami pilihan rokok—baik itu rokok kretek, rokok
-      filter, rokok elektrik (vape), maupun rokok linting—kami berharap dapat
-      memperoleh gambaran mengenai tren dan pola konsumsi rokok di masyarakat.
-      Data yang dikumpulkan dapat menjadi dasar untuk analisis lebih lanjut
-      mengenai faktor-faktor yang memengaruhi preferensi perokok terhadap jenis
-      rokok tertentu.
-    </p>
+    <nav>
+      <ul>
+        <li><a href="https://www.kodacademy.id/">Koda Academy</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/survey-table.html">Hasil Survey</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Survey Perokok</h1>
+      <p>
+        Survei ini dilakukan untuk mengetahui preferensi dan kebiasaan konsumsi
+        rokok pada Talent Koda Academy Batch 3.
+      </p>
 
-    <form>
-      <!-- Nama -->
-      <div>
-        <label for="nama">Nama</label><br />
-        <input type="text" name="nama" id="nama" />
-      </div>
+      <form>
+        <!-- Nama -->
+        <div>
+          <label for="nama">Nama</label><br />
+          <input type="text" name="nama" id="nama" />
+        </div>
 
-      <!-- Umur -->
-      <div>
+        <!-- Umur -->
+        <div>
+          <br />
+          <label for="umur">Umur</label><br />
+          <input type="number" name="umur" id="umur" />
+        </div>
+
+        <!-- Jenis Kelamin -->
+        <div>
+          <br />
+          <label>Jenis Kelamin</label><br />
+          <input type="radio" name="gender" id="l" value="L" />
+          <label for="l">Laki-laki</label>
+          <input type="radio" name="gender" id="p" value="P" />
+          <label for="p">Perempuan</label>
+        </div>
+
+        <!-- Perokok? -->
+        <div>
+          <br />
+          <label for="perokok">Apakah Anda Perokok?</label><br />
+          <select name="perokok" id="perokok">
+            <option value="" disabled selected>Pilih</option>
+            <option value="true">Ya</option>
+            <option value="false">Tidak</option>
+          </select>
+        </div>
+
+        <!-- Jenis Rokok -->
+        <div>
+          <br />
+          <label for="">Jenis Rokok Yang Di Konsumsi :</label><br />
+          <input type="checkbox" name="klobot" id="klobot" /><label for="klobot"
+            >Sampoerna</label
+          >
+          <input type="checkbox" name="kawung" id="kawung" /><label for="kawung"
+            >Gudang Garam</label
+          >
+
+          <input
+            type="checkbox"
+            name="rokok_keretek"
+            id="rokok_keretek"
+          /><label for="rokok_keretek">Djarum</label>
+
+          <br />
+          <input type="checkbox" name="sigaret" id="sigaret" /><label
+            for="sigaret"
+            >LA Lights</label
+          >
+          <input type="checkbox" name="cerutu" id="cerutu" /><label for="cerutu"
+            >Marlboro</label
+          >
+          <input type="checkbox" name="rokok_putih" id="rokok_putih" /><label
+            for="rokok_putih"
+            >Surya 16</label
+          >
+        </div>
+
+        <!-- Submit Button -->
         <br />
-        <label for="umur">Umur</label><br />
-        <input type="number" name="umur" id="umur" />
-      </div>
+        <button>Submit Survey</button>
 
-      <!-- Jenis Kelamin -->
-      <div>
-        <br />
-        <label>Jenis Kelamin</label><br />
-        <input type="radio" name="gender" id="l" value="L" />
-        <label for="l">Laki-laki</label>
-        <input type="radio" name="gender" id="p" value="P" />
-        <label for="p">Perempuan</label>
-      </div>
-
-      <!-- Perokok? -->
-      <div>
-        <br />
-        <label>Apakah Anda Perokok?</label><br />
-        <input type="radio" name="perokok" id="ya" value="ya" />
-        <label for="ya">Ya</label>
-        <input type="radio" name="perokok" id="tidak" value="tidak" />
-        <label for="tidak">Tidak</label>
-      </div>
-
-      <!-- Jenis Rokok -->
-      <div>
-        <br />
-        <label for="">Jenis Rokok Yang Di Konsumsi :</label><br />
-        <input type="checkbox" name="klobot" id="klobot" /><label for="klobot"
-          >Klobot</label
-        >
-        <input type="checkbox" name="kawung" id="kawung" /><label for="kawung"
-          >Kawung</label
-        >
-
-        <input type="checkbox" name="rokok_keretek" id="rokok_keretek" /><label
-          for="rokok_keretek"
-          >Rokok kretek</label
-        >
-
-        <br />
-        <input type="checkbox" name="sigaret" id="sigaret" /><label
-          for="sigaret"
-          >Sigaret</label
-        >
-        <input type="checkbox" name="cerutu" id="cerutu" /><label for="cerutu"
-          >Cerutu</label
-        >
-        <input type="checkbox" name="rokok_putih" id="rokok_putih" /><label
-          for="rokok_putih"
-          >Rokok putih</label
-        >
-      </div>
-
-      <!-- Submit Button -->
-      <br />
-      <button>Submit Survey</button>
-    </form>
+        <!-- Link Go To Survey -->
+        <div>
+          <br />
+          <a href="./pages/survey-table.html">Lihat Hasil Survey</a>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
